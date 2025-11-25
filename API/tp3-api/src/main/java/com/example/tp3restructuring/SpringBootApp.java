@@ -1,10 +1,10 @@
-package com.example.tp3restructuration;
+package com.example.tp3restructuring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication(
-        scanBasePackages = {"com.example.tp3restructuration"}
+        scanBasePackages = {"com.example.tp3restructuring"}
 )
 public class Tp3RestructurationApplication {
 
