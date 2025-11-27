@@ -83,13 +83,19 @@ public class EndpointLoggerProcessor extends AbstractProcessor<CtMethod<?>> {
         String opType = inferOpType(http);
         if (isExpensiveSearch(path)) opType = "SEARCH_EXPENSIVE";
 
+
+        String controllerName = owner.getSimpleName();
+        String methodName = m.getSimpleName();
+
         StringBuilder snippet = new StringBuilder();
-        snippet.append("// ").append(marker).append("\n");
+        snippet.append("// __instrumented_api_call__\n");
         snippet.append("org.slf4j.MDC.put(\"opType\", \"").append(opType).append("\");\n");
         snippet.append("org.slf4j.MDC.put(\"resource\", \"").append(resource).append("\");\n");
         snippet.append("org.slf4j.MDC.put(\"path\", \"").append(path).append("\");\n");
+        snippet.append("org.slf4j.MDC.put(\"controller\", \"").append(controllerName).append("\");\n");
+        snippet.append("org.slf4j.MDC.put(\"method\", \"").append(methodName).append("\");\n");
         snippet.append("log.info(\"api_call begin\");\n");
-
+        
         CtStatement code = f.Code().createCodeSnippetStatement(snippet.toString());
         body.insertBegin(code);
 

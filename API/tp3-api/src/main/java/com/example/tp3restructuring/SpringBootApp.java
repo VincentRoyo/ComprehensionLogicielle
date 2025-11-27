@@ -6,10 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication(
         scanBasePackages = {"com.example.tp3restructuring"}
 )
-public class Tp3RestructurationApplication {
+public class SpringBootApp {
 
     public static void main(String[] args) {
-        SpringApplication.run(Tp3RestructurationApplication.class, args);
+        SpringApplication.run(SpringBootApp.class, args);
     }
 
 }

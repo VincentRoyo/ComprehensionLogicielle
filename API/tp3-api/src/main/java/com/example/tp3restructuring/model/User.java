@@ -1,4 +1,4 @@
-package com.example.tp3restructuration.model;
+package com.example.tp3restructuring.model;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;

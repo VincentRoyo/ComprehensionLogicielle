@@ -33,6 +33,9 @@ RUN java -cp /tool.jar org.example.Main \
 # ====== Étape 3 : image d’exécution ======
 FROM eclipse-temurin:21-jre
 WORKDIR /app
+
+RUN mkdir -p /var/log/app && chmod -R 777 /var/log/app
+
 COPY --from=build /app/target/*.jar /app/app.jar
 EXPOSE 8080
 ENTRYPOINT ["java","-jar","/app/app.jar"]

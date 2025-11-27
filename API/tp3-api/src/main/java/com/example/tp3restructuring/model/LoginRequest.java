@@ -1,4 +1,21 @@
-package com.example.tp3restructuration.model;
+package com.example.tp3restructuring.model;
 
-public record LoginRequest(String email, String password) {
+import lombok.Getter;
+import lombok.Setter;
+
+@Setter
+@Getter
+public class LoginRequest {
+
+    private String email;
+    private String password;
+
+    public LoginRequest() {
+    }
+
+    public LoginRequest(String email, String password) {
+        this.email = email;
+        this.password = password;
+    }
+
 }

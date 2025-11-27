@@ -1,0 +1,28 @@
+<configuration>
+
+    <property name="LOG_DIR" value="/var/log/app"/>
+
+    <appender name="API_JSON" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_DIR}/api.log</file>
+
+        <encoder class="net.logstash.logback.encoder.LogstashEncoder" />
+
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_DIR}/api-%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>7</maxHistory>
+        </rollingPolicy>
+    </appender>
+
+    <logger name="com.example.tp3restructuring.controller" level="INFO" additivity="false">
+        <appender-ref ref="API_JSON"/>
+    </logger>
+
+    <logger name="com.example.tp3restructuring.Service" level="INFO" additivity="false">
+        <appender-ref ref="API_JSON"/>
+    </logger>
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+
+</configuration>

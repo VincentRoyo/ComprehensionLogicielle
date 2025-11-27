@@ -1,9 +1,9 @@
-package com.example.tp3restructuration.controller;
+package com.example.tp3restructuring.controller;
 
-import com.example.tp3restructuration.Service.ProductService;
-import com.example.tp3restructuration.exceptions.ProductAlreadyExistsException;
-import com.example.tp3restructuration.exceptions.ProductNotFoundException;
-import com.example.tp3restructuration.model.Product;
+import com.example.tp3restructuring.Service.ProductService;
+import com.example.tp3restructuring.exceptions.ProductAlreadyExistsException;
+import com.example.tp3restructuring.exceptions.ProductNotFoundException;
+import com.example.tp3restructuring.model.Product;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

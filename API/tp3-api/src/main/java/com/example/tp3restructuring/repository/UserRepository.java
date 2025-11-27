@@ -1,6 +1,6 @@
-package com.example.tp3restructuration.repository;
+package com.example.tp3restructuring.repository;
 
-import com.example.tp3restructuration.model.User;
+import com.example.tp3restructuring.model.User;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.Optional;

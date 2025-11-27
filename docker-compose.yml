@@ -49,6 +49,8 @@ services:
     depends_on:
       mongodb:
         condition: service_healthy
+    volumes:
+      - ./logs/APIGenerated:/var/log/app
     networks:
       - mongo_network
 

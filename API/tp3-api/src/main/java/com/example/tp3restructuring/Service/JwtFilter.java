@@ -1,4 +1,4 @@
-package com.example.tp3restructuration.Service;
+package com.example.tp3restructuring.Service;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
@@ -6,10 +6,14 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.MDC;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
+import java.util.Collections;
 
 @Component
 @RequiredArgsConstructor
@@ -18,26 +22,58 @@ public class JwtFilter extends OncePerRequestFilter {
     private final JwtService jwtService;
 
     @Override
-    protected void doFilterInternal(HttpServletRequest req, HttpServletResponse res, FilterChain chain) throws ServletException, IOException {
+    protected boolean shouldNotFilter(HttpServletRequest request) {
+        String path = request.getServletPath();
+        if ("/auth/login".equals(path)) return true;
+        return "/error".equals(path);
+    }
+
+    @Override
+    protected void doFilterInternal(
+            HttpServletRequest request,
+            HttpServletResponse response,
+            FilterChain filterChain
+    ) throws ServletException, IOException {
+
+        String authHeader = request.getHeader("Authorization");
+
+        // ❗️Pas de token → on laisse simplement passer, PAS d’erreur ici
+        if (authHeader == null || !authHeader.startsWith("Bearer ")) {
+            filterChain.doFilter(request, response);
+            return;
+        }
+
+        String token = authHeader.substring(7);
+
         try {
-            String auth = req.getHeader("Authorization");
+            String userId = jwtService.validateAndExtractUserId(token);
+            String email = jwtService.extractEmail(token);
 
-            if (auth != null && auth.startsWith("Bearer ")) {
-                String token = auth.substring(7);
+            UsernamePasswordAuthenticationToken auth =
+                    new UsernamePasswordAuthenticationToken(
+                            email,
+                            null,
+                            Collections.emptyList()
+                    );
 
-                String userId = jwtService.validateAndExtractUserId(token);
-                String email = jwtService.extractEmail(token);
+            auth.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
+            SecurityContextHolder.getContext().setAuthentication(auth);
 
-                MDC.put("userId", userId);
-                MDC.put("email", email);
-            } else {
-                MDC.put("userId", "anonymous");
+            // Pour tes logs MDC
+            MDC.put("userId", userId);
+            MDC.put("email", email);
+
+            try {
+                filterChain.doFilter(request, response);
+            } finally {
+                MDC.remove("userId");
+                MDC.remove("email");
             }
 
-            chain.doFilter(req, res);
-
-        } finally {
-            MDC.clear();
+        } catch (Exception e) {
+            // Token invalide → pas d’authentification, mais surtout PAS de 401 ici
+            SecurityContextHolder.clearContext();
+            filterChain.doFilter(request, response);
         }
     }
 }

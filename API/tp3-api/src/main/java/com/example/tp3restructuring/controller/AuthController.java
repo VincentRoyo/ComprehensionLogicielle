@@ -1,10 +1,10 @@
-package com.example.tp3restructuration.controller;
+package com.example.tp3restructuring.controller;
 
-import com.example.tp3restructuration.Service.JwtService;
-import com.example.tp3restructuration.model.LoginRequest;
-import com.example.tp3restructuration.model.TokenResponse;
-import com.example.tp3restructuration.model.User;
-import com.example.tp3restructuration.repository.UserRepository;
+import com.example.tp3restructuring.Service.JwtService;
+import com.example.tp3restructuring.model.LoginRequest;
+import com.example.tp3restructuring.model.TokenResponse;
+import com.example.tp3restructuring.model.User;
+import com.example.tp3restructuring.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -23,10 +23,10 @@ public class AuthController {
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody LoginRequest request) {
         User user = userRepo
-                .findByEmail(request.email())
+                .findByEmail(request.getEmail())
                 .orElseThrow(() -> new RuntimeException("Invalid credentials"));
 
-        if (!user.getPassword().equals(request.password())) {
+        if (!user.getPassword().equals(request.getPassword())) {
             throw new RuntimeException("Invalid credentials");
         }
 

@@ -1,6 +1,6 @@
-package com.example.tp3restructuration.Service;
+package com.example.tp3restructuring.Service;
 
-import com.example.tp3restructuration.model.User;
+import com.example.tp3restructuring.model.User;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import org.springframework.stereotype.Service;
@@ -13,7 +13,7 @@ import java.util.Date;
 public class JwtService {
 
     private final SecretKey SECRET_KEY = new SecretKeySpec(
-            "very-secret-key-change-me-32-bytes-min!".getBytes(),
+            "79f9e470ccf3e4b648f013026f55c394036f14a385bf59547892f25fc23cb33a".getBytes(),
             SignatureAlgorithm.HS256.getJcaName()
     );
 

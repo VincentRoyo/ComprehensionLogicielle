@@ -1,7 +1,7 @@
-package com.example.tp3restructuration.controller;
+package com.example.tp3restructuring.controller;
 
-import com.example.tp3restructuration.model.User;
-import com.example.tp3restructuration.repository.UserRepository;
+import com.example.tp3restructuring.model.User;
+import com.example.tp3restructuring.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

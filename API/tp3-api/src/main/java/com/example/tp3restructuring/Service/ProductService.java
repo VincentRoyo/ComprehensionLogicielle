@@ -1,9 +1,9 @@
-package com.example.tp3restructuration.Service;
+package com.example.tp3restructuring.Service;
 
-import com.example.tp3restructuration.exceptions.ProductAlreadyExistsException;
-import com.example.tp3restructuration.exceptions.ProductNotFoundException;
-import com.example.tp3restructuration.model.Product;
-import com.example.tp3restructuration.repository.ProductRepository;
+import com.example.tp3restructuring.exceptions.ProductAlreadyExistsException;
+import com.example.tp3restructuring.exceptions.ProductNotFoundException;
+import com.example.tp3restructuring.model.Product;
+import com.example.tp3restructuring.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
