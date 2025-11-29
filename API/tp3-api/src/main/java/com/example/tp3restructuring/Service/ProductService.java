@@ -7,6 +7,7 @@ import com.example.tp3restructuring.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 @Service
@@ -28,6 +29,13 @@ public class ProductService {
             throw new ProductAlreadyExistsException(p.getId());
         }
         return repo.save(p);
+    }
+
+    public List<Product> findByMinPrice(Double minPrice) {
+        if (minPrice == null) {
+            return repo.findAll();
+        }
+        return repo.findByPriceGreaterThanEqual(BigDecimal.valueOf(minPrice));
     }
 
     public Product update(String id, Product p) {

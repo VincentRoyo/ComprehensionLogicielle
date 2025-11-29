@@ -27,6 +27,13 @@ public class ProductController {
         return service.get(id);
     }
 
+    @GetMapping("/")
+    public List<Product> getProducts(
+            @RequestParam(required = false) Double minPrice
+    ) {
+        return service.findByMinPrice(minPrice);
+    }
+
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public Product create(@RequestBody Product p) {

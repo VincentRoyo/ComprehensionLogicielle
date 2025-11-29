@@ -17,6 +17,10 @@ public class EndpointLoggerProcessor extends AbstractProcessor<CtMethod<?>> {
     private static final Set<String> MAP_SIMPLE  = Set.of("getmapping","postmapping","putmapping",
             "deletemapping","patchmapping","requestmapping");
 
+    private static final Set<String> PATH_VAR_SIMPLE = Set.of("pathvariable");
+    private static final Set<String> REQ_PARAM_SIMPLE = Set.of("requestparam");
+
+
     private static final Pattern ANN_TOSTRING = Pattern.compile("@\\s*([A-Za-z0-9_$.]+)");
     private static final Pattern FIRST_QUOTED = Pattern.compile("\"([^\"]+)\"");
 
@@ -94,6 +98,33 @@ public class EndpointLoggerProcessor extends AbstractProcessor<CtMethod<?>> {
         snippet.append("org.slf4j.MDC.put(\"path\", \"").append(path).append("\");\n");
         snippet.append("org.slf4j.MDC.put(\"controller\", \"").append(controllerName).append("\");\n");
         snippet.append("org.slf4j.MDC.put(\"method\", \"").append(methodName).append("\");\n");
+
+
+        m.getParameters().forEach(p -> {
+            String paramName = p.getSimpleName(); // nom dans la signature
+            p.getAnnotations().forEach(a -> {
+                String ann = simpleAnn(a);
+
+                boolean isPathVar = PATH_VAR_SIMPLE.contains(ann);
+                boolean isReqParam = REQ_PARAM_SIMPLE.contains(ann);
+                if (!isPathVar && !isReqParam) return;
+
+                String logicalName = extractNameFromParamAnnotationSafe(a);
+                if (logicalName == null || logicalName.isBlank()) {
+                    logicalName = paramName;
+                }
+
+                String prefix = isPathVar ? "path." : "query.";
+                String key = prefix + logicalName;
+
+                snippet.append("org.slf4j.MDC.put(\"")
+                        .append(key)
+                        .append("\", String.valueOf(")
+                        .append(paramName)
+                        .append("));\n");
+            });
+        });
+
         snippet.append("log.info(\"api_call begin\");\n");
         
         CtStatement code = f.Code().createCodeSnippetStatement(snippet.toString());
@@ -196,6 +227,18 @@ public class EndpointLoggerProcessor extends AbstractProcessor<CtMethod<?>> {
             if (m.find()) return trimSlashes(m.group(1));
         }
         return null;
+    }
+
+    private String extractNameFromParamAnnotationSafe(CtAnnotation<?> a) {
+        try {
+            Map<String, CtExpression> values = a.getValues();
+            CtExpression<?> expr = values.get("value");
+            if (expr == null) expr = values.get("name");
+            String s = tryExtractStringFromExpr(expr);
+            return (s == null || s.isBlank()) ? null : s;
+        } catch (Throwable ignored) {
+            return null;
+        }
     }
 
     private String tryExtractStringFromExpr(CtExpression<?> expr) {

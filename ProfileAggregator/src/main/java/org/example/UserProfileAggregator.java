@@ -11,7 +11,7 @@ import java.util.*;
 
 /**
  * Programme autonome à lancer depuis l'IDE.
- * Il lit ../logs/api.log et génère ../logs/profiles.json
+ * Il lit ../logs/APIGenerated/api.log et génère ../logs/Aggregated/profiles.json
  * en fonction des consignes :
  *  - profil mostly-read
  *  - profil mostly-write
@@ -55,13 +55,19 @@ public class UserProfileAggregator {
 
                 JsonNode node = MAPPER.readTree(line);
 
-                String email = getText(node, "email");
-                String opType = getText(node, "opType");
+                // 1) Récupération de l'email (direct ou dans userConnected.email)
+                String email = extractEmail(node);
+
+                // 2) Métadonnées d'opération
+                String opType   = getText(node, "opType");
                 String resource = getText(node, "resource");
-                String path = getText(node, "path");
+                String path     = getText(node, "path");
+
+                // 3) Paramètre de filtre "cher" éventuel
+                Double minPrice = parseDoubleOrNull(getText(node, "query.minPrice"));
 
                 if (email == null || opType == null) {
-                    // Pas d'utilisateur ou pas de type d'opération → on ignore
+                    // Pas d'utilisateur identifié ou pas de type d'opération → on ignore
                     continue;
                 }
 
@@ -73,8 +79,8 @@ public class UserProfileAggregator {
                     stats.writes++;
                 }
 
-                // Détection d'une recherche des produits les plus chers
-                if (isExpensiveSearch(resource, path)) {
+                // Détection d'une recherche de produits chers
+                if (isExpensiveSearch(opType, resource, path, minPrice)) {
                     stats.expensiveSearches++;
                 }
             }
@@ -84,17 +90,35 @@ public class UserProfileAggregator {
     }
 
     /**
-     * Définition "produits les plus chers".
-     * Adapte cette condition à la route réelle utilisée dans ton API.
+     * Définition "recherche de produits chers".
      *
-     * Ici : on considère que les requêtes sur /products/expensive sont
-     * des recherches de produits chers.
+     * On considère que l'utilisateur cherche des produits chers si :
+     *  - opType == "SEARCH_EXPENSIVE"
+     *  - OU resource == "products" et path contient "expensive"
+     *  - OU resource == "products" et query.minPrice >= 50.0 (seuil à ajuster si besoin)
      */
-    private static boolean isExpensiveSearch(String resource, String path) {
-        if (resource == null || path == null) return false;
+    private static boolean isExpensiveSearch(String opType,
+                                             String resource,
+                                             String path,
+                                             Double minPrice) {
+        if (opType != null && "SEARCH_EXPENSIVE".equalsIgnoreCase(opType)) {
+            return true;
+        }
 
-        return "products".equalsIgnoreCase(resource)
-                && path.contains("/products/expensive");
+        if (resource == null) return false;
+
+        if ("products".equalsIgnoreCase(resource)) {
+            // Cas route dédiée, si jamais tu en ajoutes une
+            if (path != null && path.toLowerCase().contains("expensive")) {
+                return true;
+            }
+            // Cas filtre par prix minimum
+            if (minPrice != null && minPrice >= 50.0) { // seuil arbitraire
+                return true;
+            }
+        }
+
+        return false;
     }
 
     private static Map<String, Object> buildProfilesJson(Map<String, UserStats> statsByEmail) {
@@ -109,7 +133,7 @@ public class UserProfileAggregator {
             int totalOps = s.reads + s.writes;
             String readWriteProfile = "NEUTRAL";
             if (totalOps > 0) {
-                double ratioRead = (double) s.reads / totalOps;
+                double ratioRead  = (double) s.reads  / totalOps;
                 double ratioWrite = (double) s.writes / totalOps;
 
                 if (s.reads > s.writes && ratioRead >= 0.6) {
@@ -122,7 +146,7 @@ public class UserProfileAggregator {
 
             u.put("expensiveSearches", s.expensiveSearches);
             String expensiveProfile =
-                    s.expensiveSearches >= 1 ? "EXPENSIVE_SEEKER" : "NORMAL";
+                    s.expensiveSearches >= 3 ? "EXPENSIVE_SEEKER" : "NORMAL";
             u.put("expensiveProfile", expensiveProfile);
 
             users.add(u);
@@ -136,6 +160,35 @@ public class UserProfileAggregator {
     private static String getText(JsonNode node, String field) {
         JsonNode value = node.get(field);
         return (value != null && !value.isNull()) ? value.asText() : null;
+    }
+
+    /**
+     * Cherche l'email :
+     *  - d'abord au root (email)
+     *  - puis dans userConnected.email
+     */
+    private static String extractEmail(JsonNode node) {
+        // Cas où tu aurais mis l'email directement à la racine
+        String direct = getText(node, "email");
+        if (direct != null) return direct;
+
+        JsonNode userConnected = node.get("userConnected");
+        if (userConnected != null && !userConnected.isNull()) {
+            JsonNode emailNode = userConnected.get("email");
+            if (emailNode != null && !emailNode.isNull()) {
+                return emailNode.asText();
+            }
+        }
+        return null;
+    }
+
+    private static Double parseDoubleOrNull(String text) {
+        if (text == null) return null;
+        try {
+            return Double.parseDouble(text);
+        } catch (NumberFormatException e) {
+            return null;
+        }
     }
 
     private static class UserStats {

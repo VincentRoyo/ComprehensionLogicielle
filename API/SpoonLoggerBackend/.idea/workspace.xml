@@ -6,41 +6,25 @@
   <component name="ChangeListManager">
     <list default="true" id="9b5a4df4-61ee-42b8-b194-98fb1901631a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/processors/EndpointLoggerProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/processors/EndpointLoggerProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tp3-api/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/../tp3-api/.gitattributes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tp3-api/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../tp3-api/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tp3-api/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../tp3-api/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tp3-api/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/../tp3-api/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tp3-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tp3-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tp3-api/src/main/java/com/example/tp3restructuring/Service/CustomAccessDeniedHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp3-api/src/main/java/com/example/tp3restructuring/Service/CustomAccessDeniedHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tp3-api/src/main/java/com/example/tp3restructuring/Service/CustomAuthenticationEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp3-api/src/main/java/com/example/tp3restructuring/Service/CustomAuthenticationEntryPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tp3-api/src/main/java/com/example/tp3restructuring/Service/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp3-api/src/main/java/com/example/tp3restructuring/Service/JwtFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tp3-api/src/main/java/com/example/tp3restructuring/Service/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp3-api/src/main/java/com/example/tp3restructuring/Service/JwtService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp3-api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tp3-api/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../tp3-api/src/main/java/com/example/tp3restructuring/Service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp3-api/src/main/java/com/example/tp3restructuring/Service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tp3-api/src/main/java/com/example/tp3restructuring/SpringBootApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp3-api/src/main/java/com/example/tp3restructuring/SpringBootApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tp3-api/src/main/java/com/example/tp3restructuring/configuration/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp3-api/src/main/java/com/example/tp3restructuring/configuration/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tp3-api/src/main/java/com/example/tp3restructuring/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp3-api/src/main/java/com/example/tp3restructuring/controller/AuthController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../tp3-api/src/main/java/com/example/tp3restructuring/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp3-api/src/main/java/com/example/tp3restructuring/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tp3-api/src/main/java/com/example/tp3restructuring/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp3-api/src/main/java/com/example/tp3restructuring/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tp3-api/src/main/java/com/example/tp3restructuring/exceptions/ProductAlreadyExistsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp3-api/src/main/java/com/example/tp3restructuring/exceptions/ProductAlreadyExistsException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tp3-api/src/main/java/com/example/tp3restructuring/exceptions/ProductNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp3-api/src/main/java/com/example/tp3restructuring/exceptions/ProductNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tp3-api/src/main/java/com/example/tp3restructuring/model/LoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp3-api/src/main/java/com/example/tp3restructuring/model/LoginRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tp3-api/src/main/java/com/example/tp3restructuring/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp3-api/src/main/java/com/example/tp3restructuring/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tp3-api/src/main/java/com/example/tp3restructuring/model/TokenResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp3-api/src/main/java/com/example/tp3restructuring/model/TokenResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tp3-api/src/main/java/com/example/tp3restructuring/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp3-api/src/main/java/com/example/tp3restructuring/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../tp3-api/src/main/java/com/example/tp3restructuring/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp3-api/src/main/java/com/example/tp3restructuring/repository/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tp3-api/src/main/java/com/example/tp3restructuring/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp3-api/src/main/java/com/example/tp3restructuring/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tp3-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../tp3-api/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../tp3-api/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tp3-api/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tp3-api/src/test/java/com/example/tp3restructuring/Tp3RestructurationApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp3-api/src/test/java/com/example/tp3restructuring/Tp3RestructurationApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MongoDB/data/db/WiredTiger.turtle" beforeDir="false" afterPath="$PROJECT_DIR$/../../MongoDB/data/db/WiredTiger.turtle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MongoDB/data/db/WiredTiger.wt" beforeDir="false" afterPath="$PROJECT_DIR$/../../MongoDB/data/db/WiredTiger.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MongoDB/data/db/_mdb_catalog.wt" beforeDir="false" afterPath="$PROJECT_DIR$/../../MongoDB/data/db/_mdb_catalog.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MongoDB/data/db/collection-2--6521734362365015403.wt" beforeDir="false" afterPath="$PROJECT_DIR$/../../MongoDB/data/db/collection-2--6521734362365015403.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MongoDB/data/db/collection-4--6521734362365015403.wt" beforeDir="false" afterPath="$PROJECT_DIR$/../../MongoDB/data/db/collection-4--6521734362365015403.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MongoDB/data/db/index-3--6521734362365015403.wt" beforeDir="false" afterPath="$PROJECT_DIR$/../../MongoDB/data/db/index-3--6521734362365015403.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MongoDB/data/db/index-5--6521734362365015403.wt" beforeDir="false" afterPath="$PROJECT_DIR$/../../MongoDB/data/db/index-5--6521734362365015403.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MongoDB/data/db/index-6--6521734362365015403.wt" beforeDir="false" afterPath="$PROJECT_DIR$/../../MongoDB/data/db/index-6--6521734362365015403.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MongoDB/data/db/mongod.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../MongoDB/data/db/mongod.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MongoDB/data/db/sizeStorer.wt" beforeDir="false" afterPath="$PROJECT_DIR$/../../MongoDB/data/db/sizeStorer.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../logs/APIGenerated/api.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../logs/APIGenerated/api.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,28 +49,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/royo/Bureau/TP3-LOGICIEL/API/SpoonLoggerBackend",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/home/royo/Bureau/TP3-LOGICIEL/SpoonLoggerBackend/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/royo/Bureau/TP3-LOGICIEL/API/SpoonLoggerBackend&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/home/royo/Bureau/TP3-LOGICIEL/SpoonLoggerBackend/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -106,6 +90,7 @@
       <workItem from="1762959198310" duration="875000" />
       <workItem from="1762960087728" duration="5103000" />
       <workItem from="1764074245100" duration="3282000" />
+      <workItem from="1764432194913" duration="3419000" />
     </task>
     <servers />
   </component>

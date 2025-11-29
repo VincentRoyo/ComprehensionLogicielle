@@ -2,32 +2,62 @@
 
     <property name="LOG_DIR" value="/var/log/app"/>
 
-    <!-- Console classique pour voir ce qu'il se passe dans IntelliJ -->
-    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
-        <encoder>
-            <pattern>
-                %d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread] %logger{36} - %msg%n
-            </pattern>
-        </encoder>
-    </appender>
-
-    <!-- Fichier JSON pour l’API -->
     <appender name="API_JSON" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${LOG_DIR}/api.log</file>
-        <encoder class="net.logstash.logback.encoder.LogstashEncoder" />
+
+        <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
+            <providers>
+                <!-- Même style que ton log actuel -->
+                <timestamp>
+                    <fieldName>@timestamp</fieldName>
+                </timestamp>
+
+                <version>
+                    <fieldName>@version</fieldName>
+                </version>
+
+                <message/>
+                <loggerName>
+                    <fieldName>logger_name</fieldName>
+                </loggerName>
+                <threadName>
+                    <fieldName>thread_name</fieldName>
+                </threadName>
+                <logLevel>
+                    <fieldName>level</fieldName>
+                </logLevel>
+
+                <!-- 1) userConnected : userId + email -->
+                <mdc>
+                    <fieldName>userConnected</fieldName>
+                    <includeMdcKeyName>userId</includeMdcKeyName>
+                    <includeMdcKeyName>email</includeMdcKeyName>
+                </mdc>
+
+                <!-- 2) Tout le reste du MDC à la racine -->
+                <mdc>
+                    <!-- pas de fieldName -> les clés vont directement à la racine -->
+                    <excludeMdcKeyName>userId</excludeMdcKeyName>
+                    <excludeMdcKeyName>email</excludeMdcKeyName>
+                </mdc>
+            </providers>
+        </encoder>
+
+
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <fileNamePattern>${LOG_DIR}/api-%d{yyyy-MM-dd}.log</fileNamePattern>
             <maxHistory>7</maxHistory>
         </rollingPolicy>
     </appender>
 
-    <!-- Logs JSON + console pour les controllers -->
     <logger name="com.example.tp3restructuring.controller" level="INFO" additivity="false">
         <appender-ref ref="API_JSON"/>
-        <appender-ref ref="CONSOLE"/>
     </logger>
 
-    <!-- Root : au minimum la console -->
+    <logger name="com.example.tp3restructuring.Service" level="INFO" additivity="false">
+        <appender-ref ref="API_JSON"/>
+    </logger>
+
     <root level="INFO">
         <appender-ref ref="CONSOLE"/>
     </root>

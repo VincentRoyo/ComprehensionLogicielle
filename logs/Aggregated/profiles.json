@@ -1,10 +1,10 @@
 {
   "users" : [ {
     "email" : "vincent@gmail.com",
-    "totalReads" : 1,
+    "totalReads" : 31,
     "totalWrites" : 0,
     "readWriteProfile" : "READ_HEAVY",
-    "expensiveSearches" : 0,
-    "expensiveProfile" : "NORMAL"
+    "expensiveSearches" : 31,
+    "expensiveProfile" : "EXPENSIVE_SEEKER"
   } ]
 }

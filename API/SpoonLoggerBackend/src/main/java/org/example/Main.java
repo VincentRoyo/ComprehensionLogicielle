@@ -17,7 +17,7 @@ import java.util.stream.Stream;
 public class Main {
 
     public static void main(String[] args) {
-        String in  = getEnvOrDefault("IN_SRC",  "/app/src/main/java");
+        String in  = getEnvOrDefault("IN_SRC",  "/app/src/main/java/com/example/tp3restructuring/controller");
         String out = getEnvOrDefault("OUT_DIR", "/app/src-instrumented");
 
         System.out.println("===== [SPOON DEBUG] =====");
@@ -44,9 +44,11 @@ public class Main {
         env.setCommentEnabled(true);
         env.setDebug(true);
         env.setVerbose(true);
+        env.setIgnoreSyntaxErrors(true);
 
         launcher.addInputResource(in);
         launcher.setSourceOutputDirectory(out);
+
 
         Processor<CtMethod<?>> p = new EndpointLoggerProcessor();
         launcher.addProcessor(p);
