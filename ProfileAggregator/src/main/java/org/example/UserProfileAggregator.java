@@ -60,8 +60,6 @@ public class UserProfileAggregator {
 
                 // 2) Métadonnées d'opération
                 String opType   = getText(node, "opType");
-                String resource = getText(node, "resource");
-                String path     = getText(node, "path");
 
                 // 3) Paramètre de filtre "cher" éventuel
                 Double minPrice = parseDoubleOrNull(getText(node, "query.minPrice"));
@@ -80,7 +78,7 @@ public class UserProfileAggregator {
                 }
 
                 // Détection d'une recherche de produits chers
-                if (isExpensiveSearch(opType, resource, path, minPrice)) {
+                if (isExpensiveSearch(opType, minPrice)) {
                     stats.expensiveSearches++;
                 }
             }
@@ -93,29 +91,15 @@ public class UserProfileAggregator {
      * Définition "recherche de produits chers".
      *
      * On considère que l'utilisateur cherche des produits chers si :
-     *  - opType == "SEARCH_EXPENSIVE"
-     *  - OU resource == "products" et path contient "expensive"
-     *  - OU resource == "products" et query.minPrice >= 50.0 (seuil à ajuster si besoin)
+     *  - query.minPrice >= 50.0 (seuil à ajuster si besoin)
      */
-    private static boolean isExpensiveSearch(String opType,
-                                             String resource,
-                                             String path,
+    private static boolean isExpensiveSearch(String resource,
                                              Double minPrice) {
-        if (opType != null && "SEARCH_EXPENSIVE".equalsIgnoreCase(opType)) {
-            return true;
-        }
-
         if (resource == null) return false;
 
         if ("products".equalsIgnoreCase(resource)) {
-            // Cas route dédiée, si jamais tu en ajoutes une
-            if (path != null && path.toLowerCase().contains("expensive")) {
-                return true;
-            }
-            // Cas filtre par prix minimum
-            if (minPrice != null && minPrice >= 50.0) { // seuil arbitraire
-                return true;
-            }
+            // seuil arbitraire
+            return minPrice != null && minPrice >= 50.0;
         }
 
         return false;
