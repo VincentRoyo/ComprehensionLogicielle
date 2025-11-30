@@ -1,10 +1,73 @@
 {
   "users" : [ {
-    "email" : "vincent@gmail.com",
-    "totalReads" : 31,
+    "email" : "user6@example.com",
+    "totalReads" : 10,
     "totalWrites" : 0,
     "readWriteProfile" : "READ_HEAVY",
-    "expensiveSearches" : 31,
-    "expensiveProfile" : "EXPENSIVE_SEEKER"
+    "expensiveSearches" : 0,
+    "expensiveProfile" : "NORMAL"
+  }, {
+    "email" : "user4@example.com",
+    "totalReads" : 10,
+    "totalWrites" : 0,
+    "readWriteProfile" : "READ_HEAVY",
+    "expensiveSearches" : 0,
+    "expensiveProfile" : "NORMAL"
+  }, {
+    "email" : "user7@example.com",
+    "totalReads" : 10,
+    "totalWrites" : 0,
+    "readWriteProfile" : "READ_HEAVY",
+    "expensiveSearches" : 0,
+    "expensiveProfile" : "NORMAL"
+  }, {
+    "email" : "user3@example.com",
+    "totalReads" : 10,
+    "totalWrites" : 0,
+    "readWriteProfile" : "READ_HEAVY",
+    "expensiveSearches" : 0,
+    "expensiveProfile" : "NORMAL"
+  }, {
+    "email" : "user8@example.com",
+    "totalReads" : 10,
+    "totalWrites" : 0,
+    "readWriteProfile" : "READ_HEAVY",
+    "expensiveSearches" : 0,
+    "expensiveProfile" : "NORMAL"
+  }, {
+    "email" : "user2@example.com",
+    "totalReads" : 10,
+    "totalWrites" : 0,
+    "readWriteProfile" : "READ_HEAVY",
+    "expensiveSearches" : 0,
+    "expensiveProfile" : "NORMAL"
+  }, {
+    "email" : "user10@example.com",
+    "totalReads" : 10,
+    "totalWrites" : 0,
+    "readWriteProfile" : "READ_HEAVY",
+    "expensiveSearches" : 0,
+    "expensiveProfile" : "NORMAL"
+  }, {
+    "email" : "user9@example.com",
+    "totalReads" : 10,
+    "totalWrites" : 0,
+    "readWriteProfile" : "READ_HEAVY",
+    "expensiveSearches" : 0,
+    "expensiveProfile" : "NORMAL"
+  }, {
+    "email" : "user5@example.com",
+    "totalReads" : 10,
+    "totalWrites" : 0,
+    "readWriteProfile" : "READ_HEAVY",
+    "expensiveSearches" : 0,
+    "expensiveProfile" : "NORMAL"
+  }, {
+    "email" : "user1@example.com",
+    "totalReads" : 0,
+    "totalWrites" : 10,
+    "readWriteProfile" : "WRITE_HEAVY",
+    "expensiveSearches" : 0,
+    "expensiveProfile" : "NORMAL"
   } ]
 }

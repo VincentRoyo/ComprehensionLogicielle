@@ -7,7 +7,6 @@
 
         <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
             <providers>
-                <!-- Même style que ton log actuel -->
                 <timestamp>
                     <fieldName>@timestamp</fieldName>
                 </timestamp>
@@ -27,16 +26,13 @@
                     <fieldName>level</fieldName>
                 </logLevel>
 
-                <!-- 1) userConnected : userId + email -->
                 <mdc>
                     <fieldName>userConnected</fieldName>
                     <includeMdcKeyName>userId</includeMdcKeyName>
                     <includeMdcKeyName>email</includeMdcKeyName>
                 </mdc>
 
-                <!-- 2) Tout le reste du MDC à la racine -->
                 <mdc>
-                    <!-- pas de fieldName -> les clés vont directement à la racine -->
                     <excludeMdcKeyName>userId</excludeMdcKeyName>
                     <excludeMdcKeyName>email</excludeMdcKeyName>
                 </mdc>

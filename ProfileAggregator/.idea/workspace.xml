@@ -5,137 +5,192 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84abf161-8c6a-46f4-9ce6-1f92aabae8dc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../API/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../API/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/http/ApiWorkloadRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ui/ScenarioRowPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ui/UserProfileToolFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../API/SpoonLoggerBackend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../API/SpoonLoggerBackend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../API/SpoonLoggerBackend/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../API/SpoonLoggerBackend/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../API/SpoonLoggerBackend/src/main/java/org/example/processors/EndpointLoggerProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../API/SpoonLoggerBackend/src/main/java/org/example/processors/EndpointLoggerProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../API/tp3-api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../API/tp3-api/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../API/tp3-api/src/main/java/com/example/tp3restructuring/Service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../API/tp3-api/src/main/java/com/example/tp3restructuring/Service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../API/tp3-api/src/main/java/com/example/tp3restructuring/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../API/tp3-api/src/main/java/com/example/tp3restructuring/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../API/tp3-api/src/main/java/com/example/tp3restructuring/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../API/tp3-api/src/main/java/com/example/tp3restructuring/repository/ProductRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../API/tp3-api/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../API/tp3-api/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d64c8d238e4187ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d65614754689bdce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d6615147bccfdfce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d66bdc7b70c72bce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d6759d59ba42dace5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d6803cb2ce44d5ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d68a716623359fce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d694c2589a1874ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d69e3b4874a069ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d6a9b64b60b15cce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d6b3e1010cb1c2ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d6bdab4241c768ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d6c8b10503f093ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d6d2fd3c77df93ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d6dc1dff7e8d3ace5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d6e641c2a7b72ece5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d6f16c7945a87bce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d6fbd5a3a21148ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d705ffdfba4ec8ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d7107ed7ac6193ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d71ac2ec5dd3aece5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d7240d6f8f67f8ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d72ff86ee5d17cce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d739759e4fb23cce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d743dfb64b45aece5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d74ded6bc7746fce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d758fee2f1f855ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d7629d9932e28ece5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d76c4c56b9a3f7ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d7774290133984ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d781805cacefbace5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d78b763bc91d71ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d795f2b49338bace5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d7a0b88f8a36a9ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d7aab5aeb5b281ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d7b43b9ee5a72cce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d7bf774226946bce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d7c9329e73de7dce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d7d3aaf32f942ece5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d7dd44c39e2732ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d7e85f482c0d22ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d7f21f2da4959ece5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d7fcb9b5d525cece5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d807cda79de2a7ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d811d61f210722ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d81bf17c8dfb6dce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d826516efad205ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d830da4f3e10e1ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d83a5b597252d7ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d844dda94e88d6ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d84f4f2f76eeeace5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d85902cdca6f11ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d8637d993d5c18ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d86e736faa55bace5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d87842f6683982ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d882f0302cff6bce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d88c3be12b0c0ace5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d8974746453eb1ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d8a1833435f60fce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d8ab590ff484f1ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d8b6edadbf32aace5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d8c090d30ee580ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d8caf9ba0efab5ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d8d4d53ac29c49ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d8df3cdeb91f37ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d8e9394c5aebc4ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d8f356c010a6f7ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d8fe0ee593c87ace5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d908ac4e11307dce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d91299db32b849ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d91c8cc00c3289ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d927aac03e87cbce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d9319ae24fcbb6ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d93b47f8d9f39dce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d946b794591d85ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d950414954e182ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d95a0cd9eb6169ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d9654a2a5ea6a9ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d96f04079dfd92ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d979cc0bcb7b66ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d9837f0f2331ebce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d98e75fbdaf5a8ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d9984233e9baa4ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d9a2605a566ea7ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d9ad5cc303a27fce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d9b7ae07e93e2cce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d9c110a62e20fbce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d9cc22c9864a30ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d9d6afc3ffd336ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d9e06b3668c835ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d9eaf8f93f4809ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d9f51af008ada6ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925d9ff7902105564ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925da09312823ecb9ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925da14e75b2c48f4ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925da1e6adb693489ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925da284e2db8e3c6ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925da32ef3ef58989ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925da3d4682cba470ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/6925da47c3a2cc9181ce5f46_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/WiredTiger.turtle" beforeDir="false" afterPath="$PROJECT_DIR$/../MongoDB/data/db/WiredTiger.turtle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/WiredTiger.wt" beforeDir="false" afterPath="$PROJECT_DIR$/../MongoDB/data/db/WiredTiger.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/_mdb_catalog.wt" beforeDir="false" afterPath="$PROJECT_DIR$/../MongoDB/data/db/_mdb_catalog.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/collection-2--6521734362365015403.wt" beforeDir="false" afterPath="$PROJECT_DIR$/../MongoDB/data/db/collection-2--6521734362365015403.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/collection-4--6521734362365015403.wt" beforeDir="false" afterPath="$PROJECT_DIR$/../MongoDB/data/db/collection-4--6521734362365015403.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/index-3--6521734362365015403.wt" beforeDir="false" afterPath="$PROJECT_DIR$/../MongoDB/data/db/index-3--6521734362365015403.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/index-5--6521734362365015403.wt" beforeDir="false" afterPath="$PROJECT_DIR$/../MongoDB/data/db/index-5--6521734362365015403.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/index-6--6521734362365015403.wt" beforeDir="false" afterPath="$PROJECT_DIR$/../MongoDB/data/db/index-6--6521734362365015403.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/journal/WiredTigerLog.0000000025" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/journal/WiredTigerPreplog.0000000001" beforeDir="false" afterPath="$PROJECT_DIR$/../MongoDB/data/db/journal/WiredTigerPreplog.0000000001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/journal/WiredTigerPreplog.0000000002" beforeDir="false" afterPath="$PROJECT_DIR$/../MongoDB/data/db/journal/WiredTigerPreplog.0000000002" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/mongod.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../MongoDB/data/db/mongod.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/sizeStorer.wt" beforeDir="false" afterPath="$PROJECT_DIR$/../MongoDB/data/db/sizeStorer.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/UserProfileAggregator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/UserProfileAggregator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/UserProfileAggregator$UserStats.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/UserProfileAggregator$UserStats.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/UserProfileAggregator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/UserProfileAggregator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b2e8e9d7a08ebf6ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b2e99868c455db1ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b2ea3f6b3857e46ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b2eae86598d7016ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b2eb9261e3170a1ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b2ec3d914a52dcdce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b2ecdc7b7039099ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b2ed8c3617ddee3ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b2ee23227559843ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b2eec49a1107a90ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b2ef6c3f40f5a5cce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b2f01d3e9bb0386ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b2f0b579f243d8dce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b2f15a8e225b4aace5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b2f20e8e59609c4ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b2f2ae28e1e7842ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b2f3488db47f4adce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b2f3ecd8edcb9e3ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b2f49a425e669d4ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b2f531edb87b7a4ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b2f5d2f47528911ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b2f689daa29a8dece5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b2f726257cdbb2ace5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b2f7c861e8323d4ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b2f86fd94466494ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b2f913fe806ac0ece5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b2f9b1661f51988ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b2fa52a6b689ffcce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b2fb04418a01eeace5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b2fbae67ebca2e0ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b2fc477365f36fbce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b2fce4a35d115e7ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b2fd920f6a5bbf6ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b2fe367c9e21c13ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b2fed8ffe7a52face5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b2ff87ceb3fdc0bce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b30020bf95791adce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b300cd5391a0081ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b301690188624b3ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b30214c578f32cace5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b302b261d364d31ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b3035c97c65ad06ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b30403fceaade2dce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b304a5aa3aaa388ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b30549536d3d9f9ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b305ea46b8160f2ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b3069ca735f0008ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b30733b28785a54ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b307dfde38e9899ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b308800b486ad06ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b3092c43e62b8b8ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b309c7aa981aab7ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b30a63b001fa1dfce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b30b11a118129cdce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b30bbe5a4a7f386ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b30c5090d891ecbce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b30d006be353c1ace5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b30da6ba3fed4d1ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b30e4e6fdd38e72ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b30ee5974c22f86ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b30f97771ebdf8dce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b31030831f1a768ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b310d659e2256bfce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b3118d369e6e84cce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b3122065f16863fce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b312c3070eb2bedce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b313609a8738107ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b31414878061095ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b314b6e324bee3bce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b31552ba71e08a9ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b31609a443591face5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b316acf42a5fd2ace5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b317438aebbf56bce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b317ef391397733ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b3189e8bccb4389ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b319332b7ea83f2ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b319df1c7aa7085ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b31a8176b4b812cce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b31b291bbacddeece5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b31bcaf7e4ee3a0ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b31c6b4de79a8b5ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b31d1021a85d19bce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b31db11eea1a37dce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b31e5c2f8b3c740ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b31f0e33f0df582ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b31fa3b82b1a621ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b3204f109d15784ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b320eba0a88ad78ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b321975982d5ed6ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b3223d2b8fd71c6ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b322d972b6236d7ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b3238b0f53ac1b4ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b3242bc1e091ebdce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b324cff0cb1159ece5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b325787a7ddcf1fce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b3261339f8608c2ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b326b4a4a72e441ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b32756a0f460306ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b3280c4177d0e84ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/692b328af8d48e4b10ce5f46_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/mongosh_repl_history" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/.mongodb/mongosh/snippets/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/WiredTiger" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/WiredTiger.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/WiredTiger.turtle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/WiredTiger.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/WiredTigerHS.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/_mdb_catalog.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/collection-0--6521734362365015403.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/collection-0-2430211380377398798.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/collection-0-8872993575311751223.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/collection-2--6521734362365015403.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/collection-4--6521734362365015403.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/collection-7--6521734362365015403.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/diagnostic.data/metrics.2025-11-12T14-10-37Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/diagnostic.data/metrics.2025-11-12T14-10-41Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/diagnostic.data/metrics.2025-11-12T14-22-04Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/diagnostic.data/metrics.2025-11-12T14-26-49Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/diagnostic.data/metrics.2025-11-12T15-28-46Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/diagnostic.data/metrics.2025-11-12T15-38-12Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/diagnostic.data/metrics.2025-11-12T15-43-15Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/diagnostic.data/metrics.2025-11-12T15-54-20Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/diagnostic.data/metrics.2025-11-12T16-00-40Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/diagnostic.data/metrics.2025-11-12T16-02-55Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/diagnostic.data/metrics.2025-11-12T16-36-47Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/diagnostic.data/metrics.2025-11-25T12-56-36Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/diagnostic.data/metrics.2025-11-25T13-06-09Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/diagnostic.data/metrics.2025-11-25T13-09-19Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/diagnostic.data/metrics.2025-11-25T14-17-12Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/diagnostic.data/metrics.2025-11-25T14-22-51Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/diagnostic.data/metrics.2025-11-25T14-24-48Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/diagnostic.data/metrics.2025-11-25T14-30-33Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/diagnostic.data/metrics.2025-11-25T14-37-13Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/diagnostic.data/metrics.2025-11-25T14-42-35Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/diagnostic.data/metrics.2025-11-25T15-02-51Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/diagnostic.data/metrics.2025-11-25T15-08-57Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/diagnostic.data/metrics.2025-11-25T15-19-51Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/diagnostic.data/metrics.2025-11-25T15-31-38Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/diagnostic.data/metrics.2025-11-25T16-00-15Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/diagnostic.data/metrics.2025-11-29T16-33-48Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/diagnostic.data/metrics.2025-11-29T16-53-51Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/diagnostic.data/metrics.2025-11-29T17-04-12Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/diagnostic.data/metrics.2025-11-29T17-16-22Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/diagnostic.data/metrics.2025-11-29T17-23-51Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/diagnostic.data/metrics.2025-11-29T17-27-50Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/diagnostic.data/metrics.2025-11-29T17-33-15Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/index-1--6521734362365015403.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/index-1-2430211380377398798.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/index-1-8872993575311751223.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/index-3--6521734362365015403.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/index-5--6521734362365015403.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/index-6--6521734362365015403.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/index-8--6521734362365015403.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/index-9--6521734362365015403.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/journal/WiredTigerLog.0000000033" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/journal/WiredTigerPreplog.0000000001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/journal/WiredTigerPreplog.0000000002" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/mongod.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/sizeStorer.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDB/data/db/storage.bson" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/UserProfileAggregator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/UserProfileAggregator$UserStats.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/UserProfileAggregator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../logs/APIGenerated/api.log" beforeDir="false" afterPath="$PROJECT_DIR$/../logs/APIGenerated/api.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../logs/api.log" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -150,27 +205,32 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "Application.UserProfileAggregator.executor": "Run",
     "Application.com.example.tp3restructuring.tools.UserProfileAggregator.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/royo/Bureau/TP3-LOGICIEL/ProfileAggregator",
+    "last_opened_file_path": "/home/royo/Bureau/TP3-LOGICIEL/API/tp3-api",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "/home/royo/Bureau/TP3-LOGICIEL/ProfileAggregator/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.UserProfileAggregator">
-    <configuration name="UserProfileAggregator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.UserProfileAggregator" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="ProfileAggregator" />
       <extension name="coverage">
         <pattern>
@@ -197,7 +257,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.UserProfileAggregator" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.com.example.tp3restructuring.tools.UserProfileAggregator" />
       </list>
     </recent_temporary>
@@ -218,7 +278,8 @@
       <option name="presentableId" value="Default" />
       <updated>1764087743746</updated>
       <workItem from="1764087745170" duration="871000" />
-      <workItem from="1764438444198" duration="123000" />
+      <workItem from="1764438444198" duration="849000" />
+      <workItem from="1764506174136" duration="5947000" />
     </task>
     <servers />
   </component>
