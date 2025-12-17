@@ -5,19 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75ddc5e6-de26-405b-8737-f60097a1ee56" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../SpoonLoggerBackend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpoonLoggerBackend/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp3restructuring/Service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp3restructuring/Service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp3restructuring/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp3restructuring/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp3restructuring/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp3restructuring/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp3restructuring/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp3restructuring/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp3restructuring/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp3restructuring/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frontend/react/app/components/AppLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/react/app/components/AppLayout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frontend/react/app/root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/react/app/root.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frontend/react/app/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/react/app/routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frontend/react/app/routes/app-admin-products.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/react/app/routes/app-admin-products.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frontend/react/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/react/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frontend/react/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/react/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../logs/APIGenerated/api.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../logs/APIGenerated/api.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../../nginx.conf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -30,6 +36,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Loris-Bord"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/VincentRoyo/ComprehensionLogicielle.git",
+    "accountId": "323b24f5-7e07-41fe-aa6b-02b060b1ca64"
+  }
+}]]></component>
   <component name="KubernetesApiProvider">{}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -38,6 +56,7 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="J:\MAMP\bin\php\php8.2.16\php.exe" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -60,7 +79,7 @@
     "Spring Boot.Tp3RestructurationApplication.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/royo/Bureau/TP3-LOGICIEL/API/tp3-api",
+    "last_opened_file_path": "J:/Projet/ComprehensionLogicielle/API/tp3-api",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -82,11 +101,12 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.28238.7" />
-        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-IU-252.28238.7" />
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
       </set>
     </attachedChunks>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="75ddc5e6-de26-405b-8737-f60097a1ee56" name="Changes" comment="" />
@@ -104,6 +124,7 @@
       <workItem from="1764429983860" duration="7491000" />
       <workItem from="1764506426702" duration="2609000" />
       <workItem from="1765983028190" duration="509000" />
+      <workItem from="1765995184161" duration="1240000" />
     </task>
     <servers />
   </component>

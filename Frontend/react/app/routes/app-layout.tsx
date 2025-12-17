@@ -3,13 +3,14 @@ import {
     Link,
     Navigate,
     Outlet,
-    useLocation,
+    useLocation, useNavigate,
 } from "react-router";
 import { useAuth } from "../auth/AuthContext";
 
 export default function AppLayout() {
     const { user, isLoading, logout } = useAuth();
     const location = useLocation();
+    const navigate = useNavigate();
 
     if (isLoading) {
         return <div className="p-4">Chargement...</div>;
@@ -47,7 +48,7 @@ export default function AppLayout() {
                 </nav>
                 <div className="flex items-center gap-3">
                     {user && (
-                        <span className="text-sm text-gray-700">{user.email}</span>
+                        <span className="text-sm text-gray-700" onClick={() => navigate("/app/me")}>{user.email}</span>
                     )}
                     <button
                         className="border rounded px-3 py-1 text-sm hover:bg-gray-50"

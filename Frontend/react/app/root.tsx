@@ -11,6 +11,7 @@ import type { Route } from "./+types/root";
 import "./app.css";
 import React from "react";
 import { AuthProvider } from "./auth/AuthContext";
+import { initOtel } from "./otel";
 
 export const links: Route.LinksFunction = () => [
     { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -44,6 +45,13 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
+    React.useEffect(() => {
+        console.log("[otel] effect running, window =", typeof window);
+        initOtel()
+            .then(() => console.log("[otel] init done"))
+            .catch((e) => console.error("[otel] init failed", e));
+    }, []);
+
     return (
         <AuthProvider>
             <Outlet />

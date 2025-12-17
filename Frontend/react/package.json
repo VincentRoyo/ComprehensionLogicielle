@@ -9,6 +9,15 @@
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
+    "@opentelemetry/api": "^1.9.0",
+    "@opentelemetry/auto-instrumentations-web": "^0.54.0",
+    "@opentelemetry/context-zone": "^2.2.0",
+    "@opentelemetry/exporter-trace-otlp-http": "^0.208.0",
+    "@opentelemetry/instrumentation": "^0.208.0",
+    "@opentelemetry/instrumentation-document-load": "^0.54.0",
+    "@opentelemetry/instrumentation-fetch": "^0.208.0",
+    "@opentelemetry/sdk-trace-base": "^2.2.0",
+    "@opentelemetry/sdk-trace-web": "^2.2.0",
     "@react-router/node": "^7.9.2",
     "@react-router/serve": "^7.9.2",
     "isbot": "^5.1.31",

@@ -1,9 +1,10 @@
 import React from 'react';
 import { useAuth } from '../auth/AuthContext';
-import {Link, Outlet} from "react-router";
+import {Link, Outlet, useNavigate} from "react-router";
 
 export const AppLayout: React.FC = () => {
     const { user, logout } = useAuth();
+    const navigate = useNavigate();
 
     return (
         <div style={{ fontFamily: 'sans-serif' }}>
@@ -23,8 +24,8 @@ export const AppLayout: React.FC = () => {
                 <div>
                     {user ? (
                         <>
-                            <span style={{ marginRight: 16 }}>{user.email}</span>
-                            <button onClick={logout}>Se déconnecter</button>
+                            <button style={{ marginRight: 16 }} onClick={() => navigate("/me")}>{user.email}</button>
+                            <button type={"button"} onClick={logout}>Se déconnecter</button>
                         </>
                     ) : null}
                 </div>
