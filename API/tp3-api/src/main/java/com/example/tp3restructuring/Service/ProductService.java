@@ -35,7 +35,7 @@ public class ProductService {
         if (minPrice == null) {
             return repo.findAll();
         }
-        return repo.findByPriceGreaterThanEqual(BigDecimal.valueOf(minPrice));
+        return repo.findByPriceGreaterThanEqual(minPrice);
     }
 
     public Product update(String id, Product p) {

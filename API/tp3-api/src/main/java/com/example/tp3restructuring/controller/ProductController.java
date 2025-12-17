@@ -17,21 +17,16 @@ public class ProductController {
 
     private final ProductService service;
 
-    @GetMapping
-    public List<Product> list() {
-        return service.list();
+    @GetMapping()
+    public List<Product> getProducts(
+            @RequestParam(required = false) Double minPrice
+    ) {
+        return service.findByMinPrice(minPrice);
     }
 
     @GetMapping("/{id}")
     public Product get(@PathVariable String id) {
         return service.get(id);
-    }
-
-    @GetMapping("/")
-    public List<Product> getProducts(
-            @RequestParam(required = false) Double minPrice
-    ) {
-        return service.findByMinPrice(minPrice);
     }
 
     @PostMapping

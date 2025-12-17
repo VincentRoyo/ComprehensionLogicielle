@@ -35,7 +35,6 @@ services:
     networks:
       - mongo_network
 
-
   spring-boot-app:
     build:
       context: .
@@ -52,6 +51,35 @@ services:
         condition: service_healthy
     volumes:
       - ./logs/APIGenerated:/var/log/app
+    networks:
+      - mongo_network
+      
+  frontend:
+    build:
+      context: ./Frontend/react
+      dockerfile: Dockerfile
+    container_name: frontend_container
+    expose:
+      - "3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - HOST=0.0.0.0
+    depends_on:
+      - spring-boot-app
+    networks:
+      - mongo_network
+      
+  web:
+    image: nginx:alpine
+    container_name: web_proxy
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - frontend
+      - spring-boot-app
     networks:
       - mongo_network
 
