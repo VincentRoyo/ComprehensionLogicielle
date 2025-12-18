@@ -24,9 +24,9 @@ public class ProductController {
         return service.findByMinPrice(minPrice);
     }
 
-    @GetMapping("/{id}")
-    public Product get(@PathVariable String id) {
-        return service.get(id);
+    @GetMapping("/{name}")
+    public Product get(@PathVariable String name) {
+        return service.get(name);
     }
 
     @PostMapping
@@ -35,15 +35,15 @@ public class ProductController {
         return service.create(p);
     }
 
-    @PutMapping("/{id}")
-    public Product update(@PathVariable String id, @RequestBody Product p) {
-        return service.update(id, p);
+    @PutMapping("/{name}")
+    public Product update(@PathVariable String name, @RequestBody Product p) {
+        return service.update(name, p);
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/{name}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void delete(@PathVariable String id) {
-        service.delete(id);
+    public void delete(@PathVariable String name) {
+        service.delete(name);
     }
 
     @ResponseStatus(HttpStatus.NOT_FOUND)

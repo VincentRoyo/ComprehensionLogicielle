@@ -112,7 +112,7 @@ public class UserProfileAggregatorService {
 
             u.put("expensiveSearches", s.expensiveSearches);
             String expensiveProfile =
-                    s.expensiveSearches >= 3 ? "EXPENSIVE_SEEKER" : "NORMAL";
+                    (double) s.expensiveSearches /s.reads >= 0.6 ? "EXPENSIVE_SEEKER" : "NORMAL";
             u.put("expensiveProfile", expensiveProfile);
 
             users.add(u);

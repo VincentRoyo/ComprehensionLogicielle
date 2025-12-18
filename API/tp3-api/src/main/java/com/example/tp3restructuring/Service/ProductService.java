@@ -7,7 +7,6 @@ import com.example.tp3restructuring.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import java.math.BigDecimal;
 import java.util.List;
 
 @Service
@@ -20,8 +19,8 @@ public class ProductService {
         return repo.findAll();
     }
 
-    public Product get(String id) {
-        return repo.findById(id).orElseThrow(() -> new ProductNotFoundException(id));
+    public Product get(String name) {
+        return repo.findByName(name).orElseThrow(() -> new ProductNotFoundException(name));
     }
 
     public Product create(Product p) {
@@ -38,14 +37,14 @@ public class ProductService {
         return repo.findByPriceGreaterThanEqual(minPrice);
     }
 
-    public Product update(String id, Product p) {
-        if (!repo.existsById(id)) throw new ProductNotFoundException(id);
-        p.setId(id);
+    public Product update(String name, Product p) {
+        if (!repo.existsByName(name)) throw new ProductNotFoundException(name);
+        p.setName(name);
         return repo.save(p);
     }
 
-    public void delete(String id) {
-        if (!repo.existsById(id)) throw new ProductNotFoundException(id);
-        repo.deleteById(id);
+    public void delete(String name) {
+        if (!repo.existsByName(name)) throw new ProductNotFoundException(name);
+        repo.deleteByName(name);
     }
 }

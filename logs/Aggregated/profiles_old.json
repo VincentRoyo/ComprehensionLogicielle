@@ -5,21 +5,21 @@
     "totalWrites" : 16,
     "readWriteProfile" : "WRITE_HEAVY",
     "expensiveSearches" : 4,
-    "expensiveProfile" : "NORMAL"
+    "expensiveProfile" : "EXPENSIVE_SEEKER"
   }, {
     "email" : "user4@example.com",
     "totalReads" : 19,
     "totalWrites" : 0,
     "readWriteProfile" : "READ_HEAVY",
     "expensiveSearches" : 6,
-    "expensiveProfile" : "NORMAL"
+    "expensiveProfile" : "EXPENSIVE_SEEKER"
   }, {
     "email" : "user7@example.com",
     "totalReads" : 15,
     "totalWrites" : 0,
     "readWriteProfile" : "READ_HEAVY",
     "expensiveSearches" : 5,
-    "expensiveProfile" : "NORMAL"
+    "expensiveProfile" : "EXPENSIVE_SEEKER"
   }, {
     "email" : "user3@example.com",
     "totalReads" : 19,
@@ -33,14 +33,14 @@
     "totalWrites" : 0,
     "readWriteProfile" : "READ_HEAVY",
     "expensiveSearches" : 5,
-    "expensiveProfile" : "NORMAL"
+    "expensiveProfile" : "EXPENSIVE_SEEKER"
   }, {
     "email" : "user2@example.com",
     "totalReads" : 11,
     "totalWrites" : 0,
     "readWriteProfile" : "READ_HEAVY",
     "expensiveSearches" : 3,
-    "expensiveProfile" : "NORMAL"
+    "expensiveProfile" : "EXPENSIVE_SEEKER"
   }, {
     "email" : "user10@example.com",
     "totalReads" : 19,
@@ -61,13 +61,13 @@
     "totalWrites" : 0,
     "readWriteProfile" : "READ_HEAVY",
     "expensiveSearches" : 5,
-    "expensiveProfile" : "NORMAL"
+    "expensiveProfile" : "EXPENSIVE_SEEKER"
   }, {
     "email" : "user1@example.com",
     "totalReads" : 18,
     "totalWrites" : 0,
     "readWriteProfile" : "READ_HEAVY",
     "expensiveSearches" : 6,
-    "expensiveProfile" : "NORMAL"
+    "expensiveProfile" : "EXPENSIVE_SEEKER"
   } ]
 }
