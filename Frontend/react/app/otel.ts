@@ -14,6 +14,8 @@ import {
     W3CBaggagePropagator,
     W3CTraceContextPropagator,
 } from "@opentelemetry/core";
+import {useAuth} from "~/auth/AuthContext";
+import {getOtelUser} from "~/otelUserContext";
 
 diag.setLogger(new DiagConsoleLogger(), DiagLogLevel.INFO);
 
@@ -27,7 +29,6 @@ export async function initOtel() {
         spanProcessors: [
             new BatchSpanProcessor(
                 new OTLPTraceExporter({
-                    // ton Collector (ex: 4319 si tu l’as décalé)
                     url: "/otel/v1/traces",
                 })
             ),
@@ -50,7 +51,9 @@ export async function initOtel() {
                     clearTimingResources: true,
                     // “logs” visibles dans Jaeger sous forme d’events
                     applyCustomAttributesOnSpan(span) {
+                        const user = getOtelUser();
                         span.addEvent("frontend.fetch.instrumented");
+                        if (user?.email) span.setAttribute("enduser.email", user.email);
                     },
                 },
             }),

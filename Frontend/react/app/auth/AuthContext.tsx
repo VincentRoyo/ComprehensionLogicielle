@@ -5,6 +5,8 @@ import React, {
     useState,
 } from "react";
 
+import { setOtelUser } from "../otelUserContext";
+
 type User = {
     email: string;
 };
@@ -34,6 +36,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         if (storedToken && storedEmail) {
             setToken(storedToken);
             setUser({ email: storedEmail });
+            setOtelUser({ email: storedEmail });
         }
         setIsLoading(false);
     }, []);
@@ -54,6 +57,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
         setToken(jwt);
         setUser({ email });
+        setOtelUser({ email: email });
 
         localStorage.setItem(STORAGE_TOKEN_KEY, jwt);
         localStorage.setItem(STORAGE_EMAIL_KEY, email);
@@ -62,6 +66,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     function logout() {
         setToken(null);
         setUser(null);
+        setOtelUser(null);
         localStorage.removeItem(STORAGE_TOKEN_KEY);
         localStorage.removeItem(STORAGE_EMAIL_KEY);
     }

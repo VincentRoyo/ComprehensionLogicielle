@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75ddc5e6-de26-405b-8737-f60097a1ee56" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp3restructuring/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp3restructuring/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Frontend/react/app/components/AppLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/react/app/components/AppLayout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Frontend/react/app/root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/react/app/root.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Frontend/react/app/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/react/app/routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Frontend/react/app/routes/app-admin-products.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/react/app/routes/app-admin-products.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Frontend/react/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/react/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Frontend/react/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/react/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../logs/APIGenerated/api.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../logs/APIGenerated/api.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../../nginx.conf" afterDir="false" />
-    </list>
+    <list default="true" id="75ddc5e6-de26-405b-8737-f60097a1ee56" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -124,7 +112,7 @@
       <workItem from="1764429983860" duration="7491000" />
       <workItem from="1764506426702" duration="2609000" />
       <workItem from="1765983028190" duration="509000" />
-      <workItem from="1765995184161" duration="1240000" />
+      <workItem from="1765995184161" duration="1769000" />
     </task>
     <servers />
   </component>
