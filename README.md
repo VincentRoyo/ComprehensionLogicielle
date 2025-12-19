@@ -79,7 +79,7 @@ Cette commande :
 
 | Service | URL |
 |------|----|
-| Frontend React | 127.0.0.1 |
+| Frontend React | https://127.0.0.1/ |
 | API REST | http://localhost:8080/api |
 | Swagger UI | http://localhost:8080/api/swagger-ui/index.html |
 | Jaeger (traces) | http://localhost:16686 |
