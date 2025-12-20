@@ -89,6 +89,9 @@ Cette commande :
 
 ## 🧠 Backend – API Spring Boot
 
+Le backend constitue le cœur fonctionnel de l’application. Il expose une API REST permettant aux utilisateurs d’interagir avec les ressources métier (produits, utilisateurs, actions), tout en servant de point d’ancrage principal pour la collecte des logs.  
+Ce choix architectural reflète un cas d’usage réaliste d’application web, où les interactions client sont centralisées via des appels HTTP, facilitant ainsi l’observabilité, l’instrumentation et l’analyse des comportements utilisateurs.
+
 ### Emplacement
 ```
 API/tp3-api/
@@ -112,6 +115,9 @@ API/tp3-api/
 ---
 
 ## 🔧 Instrumentation Automatique – Spoon
+
+Afin d’assurer une collecte homogène et systématique des logs applicatifs, l’instrumentation du backend est réalisée automatiquement à l’aide de Spoon.  
+Plutôt que d’ajouter manuellement des appels de journalisation dans le code source, Spoon permet d’analyser et de transformer le code Java à la compilation, en injectant des points de log aux endroits stratégiques (entrée/sortie de méthodes, contrôleurs REST, etc.). Cette approche garantit la reproductibilité de l’instrumentation, limite les erreurs humaines et facilite l’expérimentation autour de l’observabilité logicielle.
 
 ### Emplacement
 ```
@@ -151,19 +157,39 @@ logs/APIGenerated/api.log
 ProfileAggregator/
 ```
 
-Fonctionnalités :
-- Lecture des logs JSON
-- Calcul des statistiques par utilisateur
-- Génération du fichier :
-```
-logs/Aggregated/profiles.json
-```
+Le module **ProfileAggregator** fournit une petite interface **Swing** permettant de piloter l’agrégation sans passer par la ligne de commande.
 
-L’outil peut être lancé via son interface Swing.
+L’interface sert principalement à :
+- choisir le fichier de logs JSON en entrée (par défaut : `logs/APIGenerated/api.log`) ;
+- lancer l’agrégation et générer/écraser le fichier de sortie (par défaut : `logs/Aggregated/profiles.json`) ;
+- visualiser un état d’avancement (console/zone de logs) et les erreurs de parsing éventuelles.
+
+> L’objectif est de rendre l’outil utilisable “en démo” : on génère des logs via l’application, puis on reconstruit les profils utilisateurs en un clic.
+
+
+### Exécution automatique de scénarios (génération de traces & profils)
+
+En plus de l’agrégation, **ProfileAggregator** peut exécuter automatiquement une série de **scénarios utilisateurs** afin de produire des traces et des logs variés (connexion, lecture, actions sur les produits, etc.).
+Ces scénarios ont pour but de simuler une utilisation “réaliste” de l’application (plusieurs utilisateurs, plusieurs types d’opérations), puis d’enchaîner directement avec l’agrégation des profils.
+
+Concrètement, le mode “scénarios” :
+1. déclenche une suite d’actions côté application (appels HTTP vers l’API) ;
+2. génère ainsi des logs structurés côté backend (dans `logs/APIGenerated/`);
+3. lance l’agrégation pour produire `logs/Aggregated/profiles.json`.
+
+Cela permet d’obtenir en une exécution :
+- des **logs** exploitables côté API ;
+- des **profils agrégés** directement réutilisables pour l’analyse demandée dans le TP.
+
+> Remarque : si l’exécution automatique est utilisée, assurez-vous que la stack Docker (API / proxy / front / observabilité) est déjà démarrée.
+
 
 ---
 
 ## 🖥️ Frontend React & OpenTelemetry
+
+Le frontend constitue la couche de présentation de l’application et permet aux utilisateurs d’interagir avec les fonctionnalités exposées par le backend. Il offre une interface web simple simulant des usages concrets (consultation, actions utilisateur, navigation), tout en jouant un rôle central dans la génération des traces.  
+Chaque interaction déclenchée côté interface entraîne une cascade d’appels vers l’API backend, ce qui permet d’observer et d’analyser le chemin d’une requête, depuis l’action utilisateur, dans un contexte d’instrumentation OpenTelemetry.
 
 ### Emplacement
 ```
@@ -174,7 +200,6 @@ Frontend/react/
 - Interface utilisateur complète
 - Consommation de l’API REST
 - Instrumentation automatique des appels HTTP (fetch)
-- Propagation des traces vers le backend
 
 ### Instrumentation OpenTelemetry
 - Initialisation dans :
@@ -190,6 +215,9 @@ app/otel.ts
 
 ## 🔍 Observabilité & Traces
 
+Dans ce projet, le traçage est utilisé pour observer le déroulement des scénarios d’exécution et l’enchaînement des opérations au sein des composants instrumentés. Les traces produites ne couvrent pas l’intégralité du chemin de bout en bout entre le frontend et le backend, mais offrent néanmoins une vision structurée des interactions et des traitements réalisés, suffisante pour analyser les comportements et illustrer les principes d’observabilité.
+
+
 ### OpenTelemetry Collector
 - Configuration : `otelcol.yaml`
 - Réception OTLP
@@ -197,8 +225,9 @@ app/otel.ts
 - Export vers Jaeger
 
 ### Jaeger
-- Interface : http://localhost:16686
-- Visualisation des traces corrélées frontend / backend
+
+Jaeger fournit une interface de visualisation des traces collectées, facilitant l’analyse des scénarios exécutés et des opérations instrumentées. Les traces observées reflètent les enchaînements d’appels et les durées associées, et sont utilisées comme support d’analyse.
+
 
 ---
 
